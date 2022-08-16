@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "sinkin_sans400_regular";
+  src: url("font/sinkinsans-400regular-webfont.woff2") format("woff2"),
+    url("font/sinkinsans-400regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#back {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  top: 200px;
+  animation: cloud 20s infinite;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url(img/Asset\ 2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100px -100px;
+  font-family: "sinkin_sans400_regular";
+}
+#navbar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  margin-right: 120px;
+  list-style: none;
+}
+#navbar ul li .nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+}
+#navbar ul li .nav-link:hover {
+  border-bottom: 3px solid #e8acb3;
+}
+#navbar ul li:nth-child(4) a:hover {
+  border-bottom: 3px solid #fff;
+}
+.search-button {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .text {
+  width: 30%;
+  margin-top: 200px;
+  margin-right: 50px;
+  padding: 20px;
+  height: 300px;
+  text-align: center;
+}
+main .text .text-caption {
+  margin-bottom: 50px;
+  text-align: left;
+}
+main .text .text-caption p {
+  font-size: 12px;
+}
+main .text .text-caption h1 {
+  letter-spacing: 3px;
+}
+main .text a {
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+
+@keyframes cloud {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
